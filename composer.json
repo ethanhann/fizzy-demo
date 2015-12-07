@@ -1,0 +1,19 @@
+{
+    "name": "ethanhann/fizzy-demo",
+    "authors": [
+        {
+            "name": "Ethan Hann",
+            "email": "ethanhann@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Acme\\": "src/Acme"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "require": {
+        "ethanhann/fizzy": "^0.2.2"
+    }
+}
