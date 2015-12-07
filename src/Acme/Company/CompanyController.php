@@ -7,7 +7,7 @@
 
 namespace Acme\Company;
 
-use Eeh\WebServiceControllerInterface;
+use Eeh\Fizzy\WebServiceControllerInterface;
 
 class CompanyController implements WebServiceControllerInterface
 {

@@ -7,7 +7,7 @@
 
 namespace Acme\Person;
 
-use Eeh\WebServiceControllerInterface;
+use Eeh\Fizzy\WebServiceControllerInterface;
 
 /*
  * WebServiceControllerInterface interface indicates that that the class is a web api controller.

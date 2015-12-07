@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8ae72bb5cfc17cd72853a5056f29a0ca",
-    "content-hash": "8a58ddbed58eb4ef05b965a958e8f3e3",
+    "hash": "60cb0affc8f60517694597ad68fbdc5d",
+    "content-hash": "3d25fc92fe1c0b5062d9f9f34ea2dc68",
     "packages": [
         {
             "name": "athletic/athletic",
@@ -183,16 +183,16 @@
         },
         {
             "name": "ethanhann/fizzy",
-            "version": "0.2.2",
+            "version": "0.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ethanhann/fizzy.git",
-                "reference": "4a0dba607be7ebf7e24b9257c3594853e7a1ff55"
+                "reference": "6a1a4468ff6088bcd031306b20c078838c62dae4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ethanhann/fizzy/zipball/4a0dba607be7ebf7e24b9257c3594853e7a1ff55",
-                "reference": "4a0dba607be7ebf7e24b9257c3594853e7a1ff55",
+                "url": "https://api.github.com/repos/ethanhann/fizzy/zipball/6a1a4468ff6088bcd031306b20c078838c62dae4",
+                "reference": "6a1a4468ff6088bcd031306b20c078838c62dae4",
                 "shasum": ""
             },
             "require": {
@@ -220,7 +220,7 @@
                 }
             ],
             "description": "A DTO-centric, PHP 7 micro Web API framework built on Silex.",
-            "time": "2015-12-07 04:10:09"
+            "time": "2015-12-07 04:26:04"
         },
         {
             "name": "jms/metadata",

@@ -7,6 +7,6 @@
 
 $loader = require_once __DIR__ . '/../vendor/autoload.php';
 
-(new \Eeh\FizzyApp('../config.json', $loader))
+(new \Eeh\Fizzy\App('../config.json', $loader))
     ->configure()
     ->run();
