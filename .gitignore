@@ -1,2 +1,7 @@
 /vendor
 /.idea
+/node_modules
+/public/app.html
+/public/build
+/public/css
+/public/js
