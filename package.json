@@ -17,9 +17,8 @@
   },
   "homepage": "https://github.com/ethanhann/fizzy-demo#readme",
   "devDependencies": {
-    "laravel-elixir": "^4.1.0"
-  },
-  "dependencies": {
-    "gulp": "^3.9.0"
+    "laravel-elixir": "^4.1.0",
+    "gulp": "^3.9.0",
+    "gulp-inject": "^3.0.0"
   }
 }
