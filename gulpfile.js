@@ -3,30 +3,30 @@ var gulp = require('gulp');
 var inject = require('gulp-inject');
 var wiredep = require('wiredep').stream;
 
-gulp.task('inject', function () {
-    var target = gulp.src('./resources/assets/html/app.html');
-    // It's not necessary to read the files (will speed up things), we're only after their paths:
-    var sources = gulp.src(['./public/build/js/*.js', './public/build/css/*.css'], {read: false});
-
-    return target
-    .pipe(inject(sources))
-    .pipe(gulp.dest('./public'));
-});
-
-gulp.task('bower', ['inject'], function () {
-    return gulp.src('./public/app.html')
-    .pipe(wiredep({
-        directory: './bower_components/',
-        bowerJson: require('./bower.json')
-    }))
-    .pipe(gulp.dest('./public/'));
+elixir.extend('inject', function (watch) {
+    new elixir.Task('inject', function () {
+        var target = gulp.src('../resources/assets/html/app.html', { cwd: './public' });
+        var sources = gulp.src(
+            ['./build/js/*.js', './build/css/*.css'],
+            {read: false, cwd: './public'}
+        );
+        return target
+        .pipe(inject(sources))
+        .pipe(wiredep({
+            ignorePath: '../../../public',
+            directory: './public/bower_components/',
+            bowerJson: require('./bower.json')
+        }))
+        .pipe(gulp.dest('./public'));
+    })
+    .watch(watch);
 });
 
 elixir(function (mix) {
     mix.scripts('app.js');
     mix.sass('app.scss');
-    mix.task('inject', 'public/build/rev-manifest.php');
-    mix.task('bower', 'bower.json');
+    //mix.copy('./resources/assets/html/app.html', './public/app.html');
+    mix.inject(['./public/build/rev-manifest.php', './bower.json', './resources/assets/html/app.html']);
 
     mix.version(['css/app.css', 'js/app.js']);
 });
