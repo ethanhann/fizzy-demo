@@ -1,0 +1,26 @@
+{
+  "name": "fizzy-demo",
+  "authors": [
+    "Ethan Hann <ethanhann@gmail.com> (http://ethanhann.com)"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ethanhann/fizzy-demo",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vue": "~1.0.11",
+    "jquery": "~2.1.4",
+    "superagent": "~1.5.0"
+  },
+  "overrides": {
+    "superagent": {
+      "main": ["lib/client.js"]
+    }
+  }
+}
