@@ -9,8 +9,14 @@
     <!-- inject:css -->
     <!-- endinject -->
 </head>
-<body>
+<body id="app">
 <h1>Fizzy Demo</h1>
+<h2>Person List</h2>
+<ul>
+    <li v-for="person in people">
+        {{ person.name }}
+    </li>
+</ul>
 
 <!-- bower:js -->
 <!-- endbower -->

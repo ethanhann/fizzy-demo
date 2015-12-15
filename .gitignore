@@ -1,8 +1,8 @@
-/bower_components
 /vendor
 /.idea
 /node_modules
 /public/app.html
+/public/bower_components
 /public/build
 /public/css
 /public/js

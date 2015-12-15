@@ -16,11 +16,7 @@
   "dependencies": {
     "vue": "~1.0.11",
     "jquery": "~2.1.4",
-    "superagent": "~1.5.0"
-  },
-  "overrides": {
-    "superagent": {
-      "main": ["lib/client.js"]
-    }
+    "axios": "~0.8.1",
+    "vue-router": "~0.7.7"
   }
 }
